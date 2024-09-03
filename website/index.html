@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <title>Shell Color Scrips</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/pygment_trac.css" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Shell Color Scripts</h1>
+        <p>ASCII art for your terminal</p>
+        <p class="view">
+          <a href="https://github.com/ibrahimraimi/shell-color-scripts"
+            >View the Project on GitHub</a
+          >
+        </p>
+      </header>
+
+      <section>
+        <h2>Installing shell-color-scripts on Arch Linux</h2>
+
+        <p>
+          All you need to do is download the PKGBUILD from this repository. Then
+          run the following command:
+        </p>
+
+        <pre><code>makepkg -cf</code></pre>
+
+        <p>
+          This will create a file that ends in .pkg.tar.xz (for example,
+          shell-color-scripts-0.1-1-x86_64.pkg.tar.xz). Then run:
+        </p>
+
+        <pre><code>sudo pacman -U *.pkg.tar.zst</code></pre>
+
+        <p>
+          Alternately, you could also install shell-color-scripts from the AUR
+          using an AUR helper such as yay:
+        </p>
+
+        <pre><code>yay -S shell-color-scripts</code></pre>
+
+        <h2>
+          Installing shell-color-scripts on NixOS or nixpkgs (unstable only)
+        </h2>
+
+        <p>
+          Shell-color-scripts is packaged for nixpkgs (unstable only). Although
+          manpages and shell completions are not packaged yet
+        </p>
+
+        <p>For NixOS users (unstable only)</p>
+
+        <pre><code>nix-env -iA nixos.dt-shell-color-scripts</code></pre>
+
+        <p>For nixpkgs users (unstable only)</p>
+
+        <pre><code>nix-env -iA nixpkgs.dt-shell-color-scripts</code></pre>
+
+        <h2>Installing shell-color-scripts on Fedorass</h2>
+
+        <p>
+          Shell-color-scripts is packaged for the two supported versions of
+          Fedora at the moment of reading and also for Rawhide as a Copr package
+          for all the supported architectures and includes the manpages and
+          shell completions. Installation instructions can be found on the
+          <a
+            href="https://copr.fedorainfracloud.org/coprs/foopsss/shell-color-scripts/"
+            target="_blank"
+            >Copr page of the package.</a
+          >
+        </p>
+
+        <h2>Installing shell-color-scripts on other Linux distributions</h2>
+
+        <p>Download the source code from this repository or use a git clone:</p>
+
+        <pre>
+git clone https://github.com/ibrahimraimi/shell-color-scripts.git
+cd shell-color-scripts
+sudo make install
+
+# Removal
+sudo make uninstall
+
+# optional for zsh completion
+sudo cp completions/_colorscript /usr/share/zsh/site-functions
+
+# optional for fish shell completion
+        </pre>
+
+        <h2>Usage</h2>
+
+        <pre>
+colorscript --help
+Description: A collection of terminal color scripts.
+
+Usage: colorscript [OPTION] [SCRIPT NAME/INDEX]
+-h, --help, help        	Print this help.
+-l, --list, list        	List all installed color scripts.
+-r, --random, random    	Run a random color script.
+-e, --exec, exec        	Run a specified color script by SCRIPT NAME or INDEX.
+-a, --all, all          	List the outputs of all colorscripts with their SCRIPT NAME
+-b, --blacklist, blacklist	Blacklist a color script by SCRIPT NAME or INDEX.
+        </pre>
+
+        <h2>
+          The Scripts Are Located in /opt/shell-color-scripts/colorscripts
+        </h2>
+
+        <p>The source for shell-color-scripts is placed in:</p>
+
+        <pre><code>/opt/shell-color-scripts/colorscripts</code></pre>
+
+        <p>
+          For even more fun, add the following line to your .bashrc or .zshrc
+          and you will run a random color script each time you open a terminal:
+        </p>
+
+        <pre><code>
+### RANDOM COLOR SCRIPT ###
+colorscript random
+        </code></pre>
+
+        <h2>Credits</h2>
+
+        <p>
+          This is essentially a compilation of other people's work, so here are
+          some credits:
+        </p>
+
+        <ul>
+          <li><a href="https://gitlab.com/dwt1">Derek Taylor</a></li>
+        </ul>
+      </section>
+      <footer>
+        <p>
+          This project is maintained by
+          <a href="http://github.com/ibrahimraimi" target="_blank"
+            >Metropolis Boomin</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="./js/scale.fix.js"></script>
+  </body>
+</html>
