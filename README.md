@@ -1,6 +1,6 @@
 # Shell Color Scripts
 
-![Screenshot of shell-color-scripts](https://gitlab.com/dwt1/dotfiles/raw/master/.screenshots/dotfiles12.png)
+![Screenshot of shell-color-scripts](./assets/screenshot-01.png)
 
 A collection of terminal color scripts.
 
